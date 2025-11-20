@@ -1,4 +1,0 @@
-python
-ucsc-liftover
-bedtools
-bowtie2
