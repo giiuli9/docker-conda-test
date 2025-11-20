@@ -22,7 +22,7 @@ dependencies:
   - picard
 
   # --- R base ---
-  - r-base
+  - r-base=4.3
   - r-data.table
   - r-ggplot2
   - r-RColorBrewer
@@ -33,7 +33,5 @@ dependencies:
   - bioconductor-chipseeker
   - bioconductor-org.Mm.eg.db
   - bioconductor-org.Hs.eg.db
-  - bioconductor-TxDb.Mmusculus.UCSC.mm9.knownGene
   - bioconductor-TxDb.Mmusculus.UCSC.mm10.knownGene
-  - bioconductor-TxDb.Hsapiens.UCSC.hg19.knownGene
   - bioconductor-TxDb.Hsapiens.UCSC.hg18.knownGene
