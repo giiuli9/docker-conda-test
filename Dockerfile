@@ -2,12 +2,16 @@ FROM mambaorg/micromamba:1.5.8-lunar
 
 WORKDIR /app
 
-COPY requirements.txt .
+# Copy environment spec
+COPY environment.yml .
 
-RUN micromamba create -n env
+# Create environment
+RUN micromamba env create -f environment.yml && \
+    micromamba clean --all --yes
 
-RUN micromamba install -y -n env -c conda-forge -c bioconda --file requirements.txt
+# Activate by default
+SHELL ["bash", "-c"]
+RUN echo "micromamba activate chipseq-env" >> ~/.bashrc
+ENV PATH=/opt/conda/envs/chipseq-env/bin:$PATH
 
-
-RUN echo "source activate env" > ~/.bashrc
-ENV PATH /opt/conda/envs/env/bin:$PATH
+CMD ["/bin/bash"]
