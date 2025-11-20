@@ -6,12 +6,11 @@ WORKDIR /app
 COPY environment.yml .
 
 # Create environment
-RUN micromamba env create -f environment.yml && \
-    micromamba clean --all --yes
+RUN micromamba create -y -n chipseq-env -f environment.yml openjdk=17 \
+    && micromamba clean --all --yes
 
 # Activate by default
-SHELL ["bash", "-c"]
-RUN echo "micromamba activate chipseq-env" >> ~/.bashrc
 ENV PATH=/opt/conda/envs/chipseq-env/bin:$PATH
 
-CMD ["/bin/bash"]
+# Optional but recommended:
+SHELL ["/bin/bash", "-c"]
