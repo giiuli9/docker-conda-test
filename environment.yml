@@ -27,6 +27,7 @@ dependencies:
   - r-ggplot2
   - r-RColorBrewer
   - r-devtools
+  - r-spp
 
   # --- Bioconductor packages ---
   - bioconductor-chipseeker
@@ -36,4 +37,3 @@ dependencies:
   - bioconductor-TxDb.Mmusculus.UCSC.mm10.knownGene
   - bioconductor-TxDb.Hsapiens.UCSC.hg19.knownGene
   - bioconductor-TxDb.Hsapiens.UCSC.hg18.knownGene
-  - bioconductor-spp
