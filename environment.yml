@@ -19,6 +19,7 @@ dependencies:
   - bedops
   - ucsc-bedgraphtobigwig
   - fastqc
+  - openjdk=17
   - picard
 
   # --- R base ---
