@@ -20,6 +20,7 @@ dependencies:
   - ucsc-bedgraphtobigwig
   - fastqc
   - picard
+  - gawk
 
   # --- R base ---
   - r-base=4.3
