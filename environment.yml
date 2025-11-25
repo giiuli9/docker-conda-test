@@ -6,11 +6,14 @@ channels:
 
 dependencies:
   # --- Core tools ---
+  - glibc=2.17
+  - python=3.9
+  - openjdk=17
+  - macs2=2.2.9.1
   - samtools=1.17
   - bedtools
   - bowtie
   - bowtie2
-  - macs2=2.2.7.1
   - preseq
   - deeptools
   - multiqc
