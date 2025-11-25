@@ -6,7 +6,7 @@ WORKDIR /app
 COPY environment.yml .
 
 # Create environment
-RUN micromamba create -y -n chipseq-env -f environment.yml python=3.9 openjdk=17 \
+RUN micromamba create -y -n chipseq-env -f environment.yml \
     && micromamba clean --all --yes
 
 # Activate by default
