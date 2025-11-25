@@ -10,7 +10,7 @@ dependencies:
   - bedtools
   - bowtie
   - bowtie2
-  - macs2
+  - macs2=2.2.7.1
   - preseq
   - deeptools
   - multiqc
